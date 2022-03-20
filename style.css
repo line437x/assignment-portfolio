@@ -52,20 +52,24 @@ h4 {
 }
 
 h1 {
-  font-size: 4.209rem;
+  /* font-size: 4.209rem; */
+  font-size: clamp(3.1575rem, 2.7246rem + 1.9788vw, 4.20875rem);
  /* font-size: clamp(3.125rem, 2.739rem + 1.7647vw, 4.0625rem);  */
 }
 h2 {
-  font-size: 3.157rem;
+  /* font-size: 3.157rem; */
+  font-size: clamp(2.36875rem, 2.044rem + 1.4847vw, 3.1575rem);
   /* font-size: clamp(2.5rem, 2.114rem + 1.7647vw, 3.4375rem); */
 }
 
 h3{
-  font-size: 2.369rem;
+  /* font-size: 2.369rem; */
+  font-size: clamp(1.776875rem, 1.5332rem + 1.1141vw, 2.36875rem);
   /* font-size:1.9rem */
 }
 h4 {
-  font-size: 1.333rem;
+  /* font-size: 1.333rem; */
+  font-size: clamp(1rem, 0.8628rem + 0.6271vw, 1.333125rem);
   /* font-size: 1.5rem; */
 }
 
@@ -73,7 +77,6 @@ p {
   font-family: var(--font-paragraph);
   line-height: 1.8rem;
   font-size: clamp(1rem, 0.9228rem + 0.3529vw, 1.1875rem);
-  /* font-size: clamp(1.125rem, 1.0735rem + 0.2353vw, 1.25rem); */
   max-width: 60ch;
 }
 
@@ -268,9 +271,8 @@ div.card {
   width: 11rem;
   height: auto;
   position: relative;
-  font-size: clamp(1.1875rem, 1.1103rem + 0.3529vw, 1.375rem);
-  font-weight: 300;
-  /* font-style: italic; */
+  font-size: clamp(1rem, 0.9228rem + 0.3529vw, 1.1875rem);
+  font-family: var(--font-paragraph);
   padding: 13px 20px 13px;
   border: 1px solid black;
   cursor: pointer;
@@ -290,6 +292,7 @@ div.card {
   transition: transform 250ms;
   z-index: -1;
 }
+
 .button::before {
   content: "";
   width: 100%;
