@@ -2,6 +2,7 @@
 html {
     display: grid;
     grid-template-columns: 1fr minmax(0, 1200px) 1fr;
+    font-size: 16px;
     /* background-color: var(--color-lighter); */
 }
 
@@ -51,33 +52,36 @@ h4 {
 }
 
 h1 {
- font-size: clamp(3.125rem, 2.739rem + 1.7647vw, 4.0625rem); 
+  font-size: 4.209rem;
+ /* font-size: clamp(3.125rem, 2.739rem + 1.7647vw, 4.0625rem);  */
 }
 h2 {
-  font-size: clamp(2.5rem, 2.114rem + 1.7647vw, 3.4375rem);
+  font-size: 3.157rem;
+  /* font-size: clamp(2.5rem, 2.114rem + 1.7647vw, 3.4375rem); */
 }
 
 h3{
-  font-size:1.9rem
+  font-size: 2.369rem;
+  /* font-size:1.9rem */
 }
 h4 {
-  font-size: 1.5rem;
+  font-size: 1.333rem;
+  /* font-size: 1.5rem; */
 }
 
 p {
   font-family: var(--font-paragraph);
   line-height: 1.8rem;
-  font-size: clamp(1.125rem, 1.0735rem + 0.2353vw, 1.25rem);
+  font-size: clamp(1rem, 0.9228rem + 0.3529vw, 1.1875rem);
+  /* font-size: clamp(1.125rem, 1.0735rem + 0.2353vw, 1.25rem); */
   max-width: 60ch;
 }
 
 /* ------------Style on navigation------------ */
 nav {
-  /* position: fixed; */
-  /* width: 99vw; */
   margin: 0rem;
-  /* background-color: red; */
 }
+
 #navigation {
   display: flex;
   justify-content: space-between;
@@ -86,11 +90,14 @@ nav {
 }
 
 #navigation a{
-font-size: clamp(1.4375rem, 1.3088rem + 0.5882vw, 1.75rem);
+  font-size: clamp(1rem, 0.9228rem + 0.3529vw, 1.1875rem);
+/* font-size: clamp(1.4375rem, 1.3088rem + 0.5882vw, 1.75rem); */
 }
 
 #navigation .logo{
   color: var(--color-orange);
+  font-style: italic;
+  font-size: 1.5rem;
 }
 
 .hidden {
@@ -114,7 +121,7 @@ list-style: none;
 transition: transform 0.3s;
 line-height: 1rem;
 background-color: var(--color-blue);
-padding: 2.5rem;
+padding: 1rem;
 }
 
 div.container {
@@ -148,6 +155,7 @@ div.highlightTextOut a{
   #menu{
     flex-direction: row;
     height: auto;
+    padding: 2.2rem;
   }
 
   #menu.hidden {
