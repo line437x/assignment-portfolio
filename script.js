@@ -7,7 +7,7 @@ text.innerHTML = spanWrapper(text.textContent);
 window.addEventListener("DOMContentLoaded", start);
 
 function start(){
-    document.querySelector("#navigation").addEventListener("click", toggleMenu);
+    document.querySelector(".navigation").addEventListener("click", toggleMenu);
     // element scolls in the same time when you scroll - this one is nice and smooth :))
     gsap.to(".pic_1", { scrollTrigger: { trigger: "#the_div", scrub: true, pin: true, start: "top center" }, rotate: 360});
 
@@ -32,11 +32,11 @@ function spanWrapper(text) {
 
 function toggleMenu() {
   console.log("toggleMenu");
-  document.querySelector("#menu").classList.toggle("hidden");
-  let erSkjult = document.querySelector("#menu").classList.contains("hidden");
+  document.querySelector(".menu").classList.toggle("hidden");
+  let erSkjult = document.querySelector(".menu").classList.contains("hidden");
   if (erSkjult == true) {
-    document.querySelector("#menu_button").textContent = "☰";
+    document.querySelector(".menu_button").textContent = "☰";
   } else {
-    document.querySelector("#menu_button").textContent = "✕";
+    document.querySelector(".menu_button").textContent = "✕";
   }
 }

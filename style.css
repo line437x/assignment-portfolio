@@ -83,21 +83,22 @@ p {
 /* ------------Style on navigation------------ */
 nav {
   margin: 0rem;
+  margin-top: -2.5rem;
+
 }
 
-#navigation {
+.navigation {
   display: flex;
   justify-content: space-between;
   margin-bottom: 1rem;
   margin-top: -2.5rem;
 }
 
-#navigation a{
+.navigation a{
   font-size: clamp(1rem, 0.9228rem + 0.3529vw, 1.1875rem);
-/* font-size: clamp(1.4375rem, 1.3088rem + 0.5882vw, 1.75rem); */
 }
 
-#navigation .logo{
+.navigation .logo{
   color: var(--color-orange);
   font-style: italic;
   font-size: 1.5rem;
@@ -110,14 +111,14 @@ nav {
 }
 
 
-#menu_button {
+.menu_button {
   font-size: 2.8rem;
   color: var(--color-dark);
   text-align: end;
   margin-top: 1rem;
   margin-right: 1.5rem;
 }
-#menu {
+.menu {
 display: flex;  
 flex-direction: column;
 list-style: none;
@@ -125,6 +126,7 @@ transition: transform 0.3s;
 line-height: 1rem;
 background-color: var(--color-blue);
 padding: 1rem;
+margin-top: -1rem;
 }
 
 div.container {
@@ -148,20 +150,21 @@ div.highlightTextOut a{
 
 
 @media (min-width: 800px){
-#navigation{
+.navigation{
   align-items: center;
 }
 
-  #menu_button {
+  .menu_button {
     display: none;
   }
-  #menu{
+  .menu{
     flex-direction: row;
     height: auto;
     padding: 2.2rem;
+    margin-top: 0;
   }
 
-  #menu.hidden {
+  .hidden {
     transform: translateX(0);
     opacity: 1;
   }
@@ -203,10 +206,9 @@ div.highlightTextOut a{
   align-items: center;
   justify-content: space-around;
   flex-wrap: wrap;
-  /* background-color: var(--color-light); */
   margin-inline: 0.5rem;
   margin-bottom: 4rem;
-  margin-top: -7rem;
+  margin-top: -6rem;
   padding-top: 2rem;
 }
 
